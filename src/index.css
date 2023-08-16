@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main {
+	min-height: 90vh;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.active {
+	color: royalblue;
+}
+.remove {
+	background-color: rgb(239 68 68);
+}
+.remove:hover {
+	background-color: rgb(220 38 38);
+}
+
+.add {
+	background-color: rgb(35 171 227);
+}
+
+.add:hover {
+	background-color: rgb(24 140 187);
+}
