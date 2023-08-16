@@ -10,14 +10,14 @@ export const ItemCard = ({ product }) => {
 	const { id, name, price, image } = product
 
 	useEffect(() => {
-		const productInCart = cartList.find(item => item.id === product.id)
+		const productInCart = cartList.find(item => item.id === id)
 
 		if (productInCart) {
 			setIsInCart(true)
 		} else {
 			setIsInCart(false)
 		}
-	}, [cartList, product.id])
+	}, [cartList, id])
 
 	return (
 		<div className='w-full max-w-sm  bg-white border border-gray-300 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700'>
